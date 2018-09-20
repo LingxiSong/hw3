@@ -1,3 +1,5 @@
+[![wercker status](https://app.wercker.com/status/df1def23cd737ac4ac25ae14aaad49d5/s/master "wercker status")](https://app.wercker.com/project/byKey/df1def23cd737ac4ac25ae14aaad49d5)
+
 Sta 523 - Homework 3 - (Fake) Legos Sales
 ------------
 Due on Friday September 28th by 11:59 pm.
