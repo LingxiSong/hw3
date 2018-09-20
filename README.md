@@ -2,8 +2,11 @@ Sta 523 - Homework 3 - (Fake) Legos Sales
 ------------
 Due on Friday September 28th by 11:59 pm.
 
+<br/>
+
 ![legos](legos.jpg?raw=true)
 
+<br/>
 
 ### Data
 
