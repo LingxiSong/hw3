@@ -1,11 +1,15 @@
-Homework 2 - [Your team name here]
+---
+output: html_document
+---
+
+Homework 3 - Lego Sales
 ========================================================
 
 ### Task 0 - Load the data
 
 ```{r message = FALSE}
 library(dplyr)
-load("lego_sales.RData")
+sales = readRDS("lego_sales.rds")
 ```
 
 
@@ -22,7 +26,7 @@ load("lego_sales.RData")
 ## Task 2 - Processing the data
 
 
-1. What was the most common first name of purchasers? Last name?
+1. What are the three most common first names of purchasers?
 
 ```{r}
 ```
@@ -32,7 +36,7 @@ load("lego_sales.RData")
 ```{r}
 ```
 
-3. Which five customers have spent the most money so far and how much have they spent?
+3. Which four customers have spent the most money so far and how much have they spent?
 
 ```{r}
 ```
@@ -61,3 +65,5 @@ load("lego_sales.RData")
 
 ```{r}
 ```
+
+
