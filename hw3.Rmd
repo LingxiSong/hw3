@@ -18,7 +18,35 @@ sales = readRDS("lego_sales.rds")
 <!-- Covert the `sales` object into a tidy data frame. Be sure to include a write up of your methods. -->
 
 ```{r}
+
+
+sales = readRDS("lego_sales.rds")
+nullrm=function(v){
+ifelse(as.character(v)=="NULL",NA,v)
+}
+# extract = function(x, i){
+#   x[i]
+# }
+hobbies = map(sales, 'hobbies')
+
+hobby_1 = lapply(hobbies, function(x) x[1])
+hobby_2 = lapply(hobbies, function(x) x[2])
+hobby_3 = lapply(hobbies, function(x) x[3])
+
+df1 = data_frame(
+  gender=map_chr(sales, 'gender'),
+  first_name = map_chr(sales, 'first_name'),
+  last_name = map_chr(sales, 'last_name'),
+  age = map_chr(sales, 'age'),
+  phone_number = map_chr(sales, 'phone_number', .default=NA),
+  hobbies = map(sales, 'hobbies')
+                 )%>%
+  mutate(hobby1 = nullrm(hobby_1)) %>%  
+  mutate(hobby2 = nullrm(hobby_2)) %>% 
+  mutate(hobby3 = nullrm(hobby_3)) %>%select(-one_of('hobbies'))
+
 ```
+
 
 
 <br/>
